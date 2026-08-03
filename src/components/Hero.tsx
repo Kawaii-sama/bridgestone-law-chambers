@@ -25,8 +25,14 @@ export function Hero() {
 
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-            href={`tel:+91${firm.phones[0]}`}
+            href="/find-a-lawyer"
             className="rounded-full bg-brand px-6 py-3 text-sm font-semibold text-brand-foreground transition-opacity hover:opacity-90"
+          >
+            Find a Lawyer
+          </a>
+          <a
+            href={`tel:+91${firm.phones[0]}`}
+            className="rounded-full border border-stone-500 px-6 py-3 text-sm font-semibold text-stone-100 transition-colors hover:border-stone-300"
           >
             Call for Consultation
           </a>
