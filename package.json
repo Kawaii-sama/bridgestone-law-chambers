@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seed": "node --env-file=.env.local scripts/seed.mjs"
+    "seed": "node --env-file=.env scripts/seed.mjs"
   },
   "dependencies": {
     "mongodb": "^7.5.0",

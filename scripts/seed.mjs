@@ -1,8 +1,8 @@
 import { MongoClient } from "mongodb";
 
-const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGO_URI;
 if (!uri) {
-  console.error("MONGODB_URI is not set. Add it to .env.local or export it before running this script.");
+  console.error("MONGO_URI is not set. Add it to .env or export it before running this script.");
   process.exit(1);
 }
 

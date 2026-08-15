@@ -1,13 +1,13 @@
 import { MongoClient } from "mongodb";
 
-const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGO_URI;
 
 let client: MongoClient | undefined;
 let clientPromise: Promise<MongoClient> | undefined;
 
 function getClientPromise(): Promise<MongoClient> {
   if (!uri) {
-    throw new Error("MONGODB_URI is not set");
+    throw new Error("MONGO_URI is not set");
   }
 
   if (process.env.NODE_ENV === "development") {
