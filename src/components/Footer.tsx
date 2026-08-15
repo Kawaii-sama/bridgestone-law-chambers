@@ -14,7 +14,7 @@ export function Footer() {
               {firm.name}
             </p>
             <p className="text-xs text-stone-500">
-              Reg. No. {firm.regNo} · Cert. No. {firm.certNo}
+              Registered as {firm.legalName} · Reg. No. {firm.regNo} · Cert. No. {firm.certNo}
             </p>
           </div>
         </div>

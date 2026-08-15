@@ -1,5 +1,7 @@
 export const firm = {
-  name: "Bridgestone Law Chambers",
+  name: "न्याय आपके द्वार",
+  nameTransliteration: "Nyaay Aapke Dwaar",
+  legalName: "Bridgestone Law Chambers",
   advocate: "Dr. Naresh Kumar Aggrwal",
   credentials: "LL.B, M.A., Ph.D, ND, PGDCA",
   address: "149G-(1) Block, Sri Ganganagar, Rajasthan",

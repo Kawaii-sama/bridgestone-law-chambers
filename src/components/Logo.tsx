@@ -1,10 +1,12 @@
+import { firm } from "@/lib/data";
+
 export function Logo({ className = "h-10 w-10" }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 100 100"
       className={className}
       role="img"
-      aria-label="Bridgestone Law Chambers emblem"
+      aria-label={`${firm.name} emblem`}
     >
       <circle cx="50" cy="50" r="48" fill="#1c1917" />
       <circle cx="50" cy="50" r="48" fill="none" stroke="#f5f5f4" strokeWidth="2" />

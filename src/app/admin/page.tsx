@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AdminDashboard } from "@/components/AdminDashboard";
+import { firm } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Admin | Bridgestone Law Chambers",
+  title: `Admin | ${firm.name}`,
   robots: { index: false, follow: false },
 };
 

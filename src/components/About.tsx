@@ -34,12 +34,10 @@ export function About() {
           <p className="mt-6 max-w-2xl text-stone-600">
             {firm.advocate} founded {firm.name} in Sri Ganganagar, Rajasthan,
             to provide dependable, accessible legal representation across
-            criminal, civil, corporate, and personal law matters. The
-            chambers are registered under Registration No. {firm.regNo} and
-            hold Certificate No. {firm.certNo} ({firm.certAuthority}),
-            handling matters before magistrate and session courts, the High
-            Court, and specialized tribunals across all districts of
-            Rajasthan and India.
+            criminal, civil, corporate, and personal law matters, handling
+            matters before magistrate and session courts, the High Court,
+            and specialized tribunals across all districts of Rajasthan and
+            India.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -57,6 +55,9 @@ export function About() {
               </p>
               <p className="mt-1 text-sm font-medium text-stone-800">
                 No. {firm.regNo}
+              </p>
+              <p className="mt-1 text-xs text-stone-500">
+                Registered as {firm.legalName} · Cert. No. {firm.certNo} ({firm.certAuthority})
               </p>
             </div>
           </div>

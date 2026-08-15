@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LawyerSearch } from "@/components/LawyerSearch";
+import { firm } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Find a Lawyer | Bridgestone Law Chambers",
-  description: "Search Bridgestone Law Chambers advocates by practice area and location.",
+  title: `Find a Lawyer | ${firm.name}`,
+  description: `Search ${firm.name} advocates by practice area and location.`,
 };
 
 export default function FindALawyerPage() {
@@ -22,8 +23,7 @@ export default function FindALawyerPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-stone-600">
             Tell us what you need help with and where you&apos;re based, and
-            we&apos;ll show you matching advocates from Bridgestone Law
-            Chambers.
+            we&apos;ll show you matching advocates from {firm.name}.
           </p>
 
           <div className="mt-10">

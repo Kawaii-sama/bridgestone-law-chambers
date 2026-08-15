@@ -49,7 +49,7 @@ async function seed() {
     locations: [...rajasthanDistricts, "All India"],
     phone: "9413929515",
     email: "Bridgestonelawchamber@gmail.com",
-    bio: "Founder of Bridgestone Law Chambers, Sri Ganganagar. Registered under Reg. No. 950 / 30-05-2018, handling matters across all types of legal work, all over India.",
+    bio: "Founder of न्याय आपके द्वार (registered as Bridgestone Law Chambers), Sri Ganganagar. Registered under Reg. No. 950 / 30-05-2018, handling matters across all types of legal work, all over India.",
     status: "approved",
     createdAt: new Date().toISOString(),
   };
