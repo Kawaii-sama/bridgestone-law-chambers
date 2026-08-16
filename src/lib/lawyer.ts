@@ -1,7 +1,7 @@
-import { serviceCategories, rajasthanDistricts } from "./data";
+import { serviceCategories, coverageAreas } from "./data";
 
 export const allServices = serviceCategories.flatMap((c) => c.items);
-export const allLocations = [...rajasthanDistricts, "All India"];
+export const allLocations = [...coverageAreas, "All India"];
 
 export type LawyerStatus = "pending" | "approved" | "rejected";
 
