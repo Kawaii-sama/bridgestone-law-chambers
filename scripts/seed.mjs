@@ -16,10 +16,12 @@ const rajasthanDistricts = [
   "Sawai Madhopur", "Sikar", "Sirohi", "Sri Ganganagar", "Tonk", "Udaipur",
 ];
 
+// Keep in sync with serviceCategories in src/lib/data.ts.
 const allServices = [
-  "NDPS (Drugs Cases)", "POCSO Act", "Criminal Trial", "Session Court",
-  "Magistrate Court", "Criminal Appeals", "Juvenile Justice", "Anticipatory Bail",
-  "Bail Applications", "Anti-Corruption Cases", "Lokpal Cases", "Cyber Crime",
+  "Marriage and Matrimonial", "Divorce", "Bail Applications", "Anticipatory Bail",
+  "Criminal Trial", "Criminal Appeals", "Session Court", "Magistrate Court",
+  "NDPS (Drugs Cases)", "POCSO Act", "Juvenile Justice",
+  "Anti-Corruption Cases", "Lokpal Cases", "Cyber Crime",
   "Will & Succession", "Marriage Registration", "Divorce & Family Law",
   "Property Cases (RERA)", "Rent & Tenancy", "Land Acquisition",
   "NCLT & Corporate", "Corporate Law", "Securities Law (SEBI)", "Banking Law",

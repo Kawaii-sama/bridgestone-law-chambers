@@ -27,7 +27,7 @@ export function Header() {
               {firm.name}
             </span>
             <span className="block text-xs tracking-wide text-stone-500">
-              Advocate &amp; Legal Consultants
+              {firm.nameTransliteration}
             </span>
           </span>
         </Link>
