@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { serviceCategories, rajasthanDistricts } from "@/lib/data";
+import { serviceCategories, coverageAreas } from "@/lib/data";
 
-const locationOptions = [...rajasthanDistricts, "All India"];
+const locationOptions = [...coverageAreas, "All India"];
 
 export function LawyerRegistrationForm() {
   const [name, setName] = useState("");
