@@ -85,7 +85,12 @@ export const serviceCategories: ServiceCategory[] = [
   },
 ];
 
-export const rajasthanDistricts = [
+// Delhi entries lead the list, then the rest of Rajasthan follows.
+export const coverageAreas = [
+  "Delhi NCR",
+  "Hon'ble Supreme Court",
+  "Delhi High Court",
+  "Delhi District Courts (Tis Hazari, Karkardooma, Patiala House, Rohini, Dwarka, Saket, Rouse Avenue)",
   "Ajmer", "Alwar", "Balotra", "Banswara", "Baran", "Barmer", "Beawar",
   "Bharatpur", "Bhilwara", "Bikaner", "Bundi", "Chittorgarh", "Churu",
   "Dausa", "Deeg", "Dholpur", "Didwana-Kuchaman", "Dungarpur", "Hanumangarh",

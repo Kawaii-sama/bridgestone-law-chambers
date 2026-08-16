@@ -6,7 +6,12 @@ if (!uri) {
   process.exit(1);
 }
 
-const rajasthanDistricts = [
+// Keep in sync with coverageAreas in src/lib/data.ts.
+const coverageAreas = [
+  "Delhi NCR",
+  "Hon'ble Supreme Court",
+  "Delhi High Court",
+  "Delhi District Courts (Tis Hazari, Karkardooma, Patiala House, Rohini, Dwarka, Saket, Rouse Avenue)",
   "Ajmer", "Alwar", "Balotra", "Banswara", "Baran", "Barmer", "Beawar",
   "Bharatpur", "Bhilwara", "Bikaner", "Bundi", "Chittorgarh", "Churu",
   "Dausa", "Deeg", "Dholpur", "Didwana-Kuchaman", "Dungarpur", "Hanumangarh",
@@ -48,7 +53,7 @@ async function seed() {
     credentials: "LL.B, M.A., Ph.D, ND, PGDCA",
     firmRole: "Founder & Advocate",
     expertise: allServices,
-    locations: [...rajasthanDistricts, "All India"],
+    locations: [...coverageAreas, "All India"],
     phone: "9413929515",
     email: "Bridgestonelawchamber@gmail.com",
     bio: "Founder of न्याय आपके द्वार (registered as Bridgestone Law Chambers), Sri Ganganagar. Registered under Reg. No. 950 / 30-05-2018, handling matters across all types of legal work, all over India.",
