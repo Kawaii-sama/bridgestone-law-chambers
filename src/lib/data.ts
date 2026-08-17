@@ -43,7 +43,7 @@ export const serviceCategories: ServiceCategory[] = [
   },
   {
     title: "Property & Real Estate",
-    items: ["Property Cases (RERA)", "Rent & Tenancy", "Land Acquisition"],
+    items: ["Property Settlement" ,"Property Cases (RERA)", "Rent & Tenancy", "Land Acquisition"],
   },
   {
     title: "Corporate, Banking & Finance",
