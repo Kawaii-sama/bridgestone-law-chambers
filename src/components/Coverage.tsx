@@ -1,5 +1,18 @@
 import { coverageAreas } from "@/lib/data";
 
+// The first four entries are Delhi-region courts; the rest are Rajasthan
+// districts. Splitting them lets the long "Delhi District Courts (...)"
+// entry get its own well-formatted card instead of squeezing into the
+// uniform district grid where its length breaks the row alignment.
+const delhiEntries = coverageAreas.slice(0, 4);
+const rajasthanDistricts = coverageAreas.slice(4);
+
+function parseEntry(entry: string) {
+  const match = entry.match(/^(.+?)\s*\((.+)\)$/);
+  if (!match) return { label: entry, detail: null as string[] | null };
+  return { label: match[1].trim(), detail: match[2].split(",").map((d) => d.trim()) };
+}
+
 export function Coverage() {
   return (
     <section id="coverage" className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
@@ -17,11 +30,34 @@ export function Coverage() {
         </p>
       </div>
 
-      <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3 rounded-2xl border border-stone-200 p-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-        {coverageAreas.map((area) => (
-          <div key={area} className="flex items-center gap-2 text-sm text-stone-700">
+      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {delhiEntries.map((entry) => {
+          const { label, detail } = parseEntry(entry);
+          return (
+            <div key={entry} className="rounded-2xl border border-brand/30 bg-brand/5 p-5">
+              <p className="font-serif text-base font-semibold text-stone-900">{label}</p>
+              {detail && (
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {detail.map((d) => (
+                    <span
+                      key={d}
+                      className="rounded-full bg-white px-2.5 py-1 text-xs font-medium text-stone-600 ring-1 ring-inset ring-stone-200"
+                    >
+                      {d}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 rounded-2xl border border-stone-200 p-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        {rajasthanDistricts.map((district) => (
+          <div key={district} className="flex items-center gap-2 text-sm text-stone-700">
             <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
-            {area}
+            {district}
           </div>
         ))}
       </div>

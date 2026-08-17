@@ -23,8 +23,6 @@ export const serviceCategories: ServiceCategory[] = [
   {
     title: "Criminal Law & Bail",
     items: [
-      "Marriage and Matrimonial",
-      "Divorce",
       "Bail Applications",
       "Anticipatory Bail",
       "Criminal Trial",
