@@ -75,7 +75,56 @@ export function About() {
             </p>
 
             {/* Intentionally empty — content to be supplied. */}
-            <div className="mt-6 min-h-[20rem] rounded-2xl border border-stone-200 bg-white" />
+            <div className="mt-6 rounded-2xl border border-stone-200 bg-white p-6">
+              <h3 className="font-serif text-2xl font-semibold text-stone-900">
+                Advocate Rajeev Kumar
+              </h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <span className="inline-block rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-700">
+                  Rohini
+                </span>
+                <span className="inline-block rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-700">
+                  Supreme Court of India
+                </span>
+              </div>
+
+              <div className="mt-6 space-y-4">
+                <div className="rounded-xl border border-stone-200 bg-stone-50 p-4">
+                  <p className="text-xs uppercase tracking-wide text-stone-500">
+                    Enrolment No.
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-stone-800">
+                    1677/2007
+                  </p>
+                </div>
+                <div className="rounded-xl border border-stone-200 bg-stone-50 p-4">
+                  <p className="text-xs uppercase tracking-wide text-stone-500">
+                    Chamber Address
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-stone-800">
+                    Ch. No. 1032, 10th Floor, Lawyers&apos; Chamber Block,
+                    Rohini District Courts, Delhi-85
+                  </p>
+                  <p className="mt-2 text-sm font-medium text-stone-800">
+                    Library, 1st Floor, Supreme Court of India, Delhi-110001
+                  </p>
+                </div>
+                <div className="rounded-xl border border-stone-200 bg-stone-50 p-4">
+                  <p className="text-xs uppercase tracking-wide text-stone-500">
+                    Contact
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-stone-800">
+                    9250810852
+                  </p>
+                  <p className="text-sm font-medium text-stone-800">
+                    9267986657
+                  </p>
+                  <p className="mt-1 text-sm font-medium text-stone-800">
+                    advrajivsingh1@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
