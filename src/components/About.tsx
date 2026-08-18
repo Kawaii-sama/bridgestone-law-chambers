@@ -109,20 +109,6 @@ export function About() {
                     Library, 1st Floor, Supreme Court of India, Delhi-110001
                   </p>
                 </div>
-                <div className="rounded-xl border border-stone-200 bg-stone-50 p-4">
-                  <p className="text-xs uppercase tracking-wide text-stone-500">
-                    Contact
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-stone-800">
-                    9250810852
-                  </p>
-                  <p className="text-sm font-medium text-stone-800">
-                    9267986657
-                  </p>
-                  <p className="mt-1 text-sm font-medium text-stone-800">
-                    advrajivsingh1@gmail.com
-                  </p>
-                </div>
               </div>
             </div>
           </div>
