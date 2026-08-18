@@ -15,11 +15,8 @@ export function Hero() {
           {firm.tagline}
         </p>
         <h1 className="mt-4 max-w-3xl font-serif text-4xl font-semibold leading-tight sm:text-5xl">
-          {firm.name}
+          {firm.legalName} | {firm.name}
         </h1>
-        <p className="mt-2 max-w-3xl font-serif text-xl font-semibold text-brand sm:text-2xl">
-          {firm.legalName}
-        </p>
         <p className="mt-6 max-w-2xl text-lg text-stone-300">
           Led by {firm.advocate} ({firm.credentials}), we represent clients
           across {totalServices}+ areas of law — from criminal defence and
