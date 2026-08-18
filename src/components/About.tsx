@@ -77,14 +77,14 @@ export function About() {
             {/* Intentionally empty — content to be supplied. */}
             <div className="mt-6 rounded-2xl border border-stone-200 bg-white p-6">
               <h3 className="font-serif text-2xl font-semibold text-stone-900">
-                Advocate Rajeev Kumar
+                Adv. Rajeev Kumar
               </h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 <span className="inline-block rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-700">
-                  Rohini
+                  Supreme Court of India
                 </span>
                 <span className="inline-block rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-700">
-                  Supreme Court of India
+                  Rohini
                 </span>
               </div>
 
